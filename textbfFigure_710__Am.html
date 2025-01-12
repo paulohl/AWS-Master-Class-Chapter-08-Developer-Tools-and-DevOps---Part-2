@@ -1,0 +1,21 @@
+<div><b>Figure 7.10</b> : Amazon Simple Queuing Service Basic Architecture
+(SWS Documentation).</div><div>Key features</div><div>The following are the key features of Amazon SQS [54]:</div><div><b>Scalability and elasticity</b> : SQS automatically scales to
+accommodate the volume of messages in the system, ensuring reliable
+message delivery even under varying workloads.</div><div><b>Message retention</b> : SQS allows users to set the retention
+period for messages, providing flexibility in managing the lifespan of
+messages in the queue.</div><div>Use cases</div><div>The following are the use cases:</div><div><b>Load leveling:</b> SQS can be employed to handle bursts of
+traffic by acting as a buffer that decouples the rate at which
+messages are produced and consumed [74].</div><div><b>Task decoupling:</b> In microservices architectures, SQS
+facilitates the decoupling of tasks, allowing components to
+communicate asynchronously [54].</div><div>Best practices</div><div>The following are the best practices [54]:</div><div><b>Visibility timeout:</b> Adjust the visibility timeout to give
+sufficient time for processing a message before it becomes visible to
+other consumers, preventing message duplication.</div><div><b>Dead-letter queues:</b> Implement dead-letter queues to capture
+and analyze messages that cannot be processed successfully after a
+certain number of attempts.</div><div>Considerations</div><div><b>Message ordering:</b> While SQS provides best-effort ordering, it
+is important to design systems that can handle out-of-order message
+delivery [54].</div><div>Integration with other AWS services</div><div>SQS seamlessly integrates with various AWS services, enhancing its
+capabilities and applications in different scenarios. Notable
+integrations include:</div><div><b>Amazon S3:</b> SQS can be used to trigger events in response to
+changes in an S3 bucket, enabling event-driven architectures [54].</div><div><b>AWS Lambda:</b> Leverage SQS to trigger serverless functions in
+AWS Lambda, allowing for the seamless execution of compute workloads
+[72].</div>

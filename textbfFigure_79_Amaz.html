@@ -1,0 +1,56 @@
+<div><b>Figure 7.9:</b> Amazon Managed Workflows for Apache Airflow
+Architecture (AWS Documentation)</div><div>Key features</div><div>The following are the key features of Amazon MWAA [68]:</div><ul><li><b>Managed Apache airflow environment:</b> Amazon MWAA provides a
+fully managed Apache Airflow environment, eliminating the operational
+overhead of infrastructure management.</li><li><b>Scalability and reliability:</b> The service automatically scales
+resources based on workflow requirements, ensuring reliability and
+performance during varying workloads.</li><li><b>Integration with AWS Services:</b> Amazon MWAA seamlessly
+integrates with various AWS services, allowing workflows to interact
+with and utilize other cloud resources.</li></ul><div>Use cases</div><div>The following are the use cases:</div><div><b>Data processing pipelines:</b> Organizations can use Amazon MWAA
+to create and manage data processing pipelines, orchestrating tasks
+across diverse data sources and destinations [69].</div><div><b>Extract, Transform, Load (ETL) Workflows:</b> The service is
+well-suited for orchestrating ETL workflows, enabling the efficient
+processing and transformation of data for analytics and reporting
+[68].</div><div>Best practices</div><div>The following are the best practices [69]:</div><div><b>Environment configuration:</b> Follow best practices for
+configuring the Apache Airflow environment within Amazon MWAA to
+optimize performance and security.</div><div><b>Monitoring and logging:</b> Implement robust monitoring and
+logging practices to track workflow execution, identify issues, and
+ensure optimal performance.</div><div>Considerations</div><div>The following are the considerations:</div><ul><li><b>Cost management:</b> Organizations should carefully consider and
+manage costs associated with Amazon MWAA, particularly as workflows
+scale or when integrating with data-intensive services [68].</li><li><b>Security Configuration:</b> Implementing robust security measures
+is crucial. This includes configuring IAM roles and policies properly
+to ensure least privilege access, encrypting sensitive data both in
+transit and at rest, and adhering to AWS security best practices.</li><li><b>Performance Optimization:</b> Apart from environment
+configuration, optimize workflows for performance by tuning task
+concurrency, leveraging spot instances where applicable to reduce
+costs, and using appropriate instance types based on workload
+requirements.</li><li><b>Dependency Management:</b> Manage dependencies effectively by
+utilizing Amazon MWAA’s support for Python packages and libraries.
+Ensure that dependencies are version-controlled and updated regularly
+to maintain compatibility and security.</li><li><b>Compliance and Governance:</b> Address compliance requirements
+and governance policies. This includes ensuring that workflows adhere
+to regulatory standards, implementing auditing mechanisms, and
+integrating with AWS services like AWS CloudTrail for logging API
+calls.</li><li><b>Backup and Recovery:</b> Establish robust backup and recovery
+strategies for workflow definitions and data processed through Amazon
+MWAA. Implement automated backups using Amazon S3 or other suitable
+storage solutions, and regularly test recovery procedures to ensure
+reliability.</li><li><b>Integration with CI/CD Pipelines:</b> Integrate MWAA workflows
+into CI/CD pipelines to automate deployment and updates of workflows.
+This helps in maintaining consistency and reliability across
+development, testing, and production environments.</li><li><b>Monitoring Alerts and Notifications:</b> Configure monitoring
+alerts and notifications to promptly respond to performance issues,
+failures, or resource constraints. Utilize Amazon CloudWatch metrics
+and alarms to monitor workflow execution, airflow scheduler health,
+and overall system performance.</li><li><b>Data Handling and Privacy:</b> Pay special attention to data
+handling practices within workflows. Ensure data privacy and
+compliance with data protection regulations (such as GDPR or CCPA),
+especially when dealing with sensitive or personally identifiable
+information (PII).</li><li><b>Training and Documentation:</b> Provide adequate training and
+documentation for teams working with Amazon MWAA. This includes best
+practices, troubleshooting guides, and operational procedures to
+ensure effective usage and maintenance of the service.</li><li><b>Vendor Lock-in and Portability:</b> Evaluate the implications of
+using Amazon MWAA in terms of vendor lock-in versus portability to
+other cloud providers or self-managed Apache Airflow deployments.
+Consider using AWS CloudFormation or other infrastructure-as-code
+tools for defining and managing MWAA environments to mitigate some of
+these concerns.</li></ul>

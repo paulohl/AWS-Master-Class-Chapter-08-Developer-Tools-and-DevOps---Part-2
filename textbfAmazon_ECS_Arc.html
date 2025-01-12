@@ -1,0 +1,42 @@
+<div><b>Amazon ECS Architecture Core Components</b></div><div>Amazon ECS Architecture Core Components provide the foundational
+framework for orchestrating containerized applications within AWS,
+offering robust capabilities for efficient deployment, management, and
+scaling of Docker containers. Central to ECS architecture are its
+clusters, tasks, and services, each playing a crucial role in ensuring
+seamless execution and optimal performance of containerized workloads in
+diverse cloud environments.</div><div><b>Clusters:</b> In Amazon ECS, clusters serve as logical groupings of
+container instances that collectively manage and execute Docker
+containers. These clusters provide the foundational infrastructure where
+tasks and services are orchestrated. Each ECS cluster can span multiple
+EC2 instances or utilize AWS Fargate for serverless container
+deployments. By grouping instances together, ECS simplifies the
+management and scaling of containerized applications within a defined
+environment.</div><div><b>Tasks:</b> Tasks represent the fundamental units of work in Amazon
+ECS. Defined by task definitions, each task encapsulates a specific set
+of containerized applications that operate cohesively within an ECS
+cluster. Task definitions specify crucial parameters such as Docker
+images, resource allocations (CPU and memory), networking configuration,
+and container dependencies. This modular approach allows developers to
+define and configure their application components efficiently, ensuring
+seamless execution and resource utilization across the ECS cluster.</div><div><b>Services:</b> ECS services facilitate the orchestration and
+lifecycle management of tasks within an ECS cluster. Designed for
+long-running applications, services maintain the desired number of tasks
+to meet application requirements, automatically adjusting based on
+metrics such as CPU utilization or incoming traffic. Services in ECS
+ensure high availability and scalability by continuously monitoring task
+health and replacing failed tasks as necessary. This capability enables
+developers to deploy resilient and scalable containerized applications
+with minimal operational overhead.</div><div>Use cases of Amazon ECS</div><div>The following are the use cases of Amazon ECS [80]:</div><ul><li><b>Microservices architecture:</b> ECS is well-suited for
+organizations adopting microservices architecture, providing efficient
+orchestration and scaling of individual microservices.</li><li><b>Batch Processing:</b> Organizations with batch processing
+workloads can leverage ECS to dynamically scale containerized
+applications based on workload demands.</li><li><b>CI/CD):</b> Integrating ECS with CI/CD pipelines facilitates
+automated testing and deployment of containerized applications
+[81].</li></ul><div>Benefits of using Amazon ECS</div><div>The following are the benefits of using Amazon ECS [80]:</div><ul><li><b>Cost-efficiency:</b> ECS optimizes resource utilization, ensuring
+that users pay only for the compute capacity consumed by their
+containers<sup>9</sup>.</li><li><b>Security:</b> Integrated with AWS IAM, ECS provides secure
+management of containers and access control.</li><li><b>Operational simplicity:</b> ECS abstracts infrastructure
+management complexities, allowing developers to focus on building and
+deploying applications.</li></ul><div>Integration with DevOps Workflow</div><div>Amazon ECS seamlessly integrates with common DevOps tools, enabling
+developers to incorporate containerized applications into their
+continuous integration and continuous deployment pipelines.</div>
